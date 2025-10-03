@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Meduza — Biotech, Longevity & Transformation. Elite access to advanced gene therapy, VIP medical concierge, and investment opportunities in Dubai.">
+  <title>Meduza — Biotech, Longevity & Transformation</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --bg-2:#0e1520;
+      --gold:#d4af37;
+      --gold-2:#f5d97a;
+      --ink:#dde7ff;
+      --muted:#8aa0c2;
+      --blue:#0a3a7a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--gold);text-decoration:none}
+    header{
+      position:sticky;top:0;z-index:10;
+      background:linear-gradient(180deg, rgba(11,15,20,.96), rgba(11,15,20,.75) 60%, rgba(11,15,20,0));
+      backdrop-filter:saturate(120%) blur(6px);
+      border-bottom:1px solid rgba(212,175,55,.12);
+    }
+    .nav{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.12em}
+    .brand .text{font-family:'Playfair Display',serif;color:var(--gold-2);font-size:1.1rem;letter-spacing:.12em}
+    .logo-img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid rgba(212,175,55,.28);box-shadow:0 6px 18px rgba(0,0,0,.6)}
+    nav a{margin:0 10px;font-weight:600;color:#e8f0ff}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid rgba(212,175,55,.45);background:linear-gradient(180deg, rgba(212,175,55,.06), rgba(212,175,55,.01));color:var(--gold-2);font-weight:700}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,175,55,.08)}
+
+    /* HERO */
+    .hero{
+      position:relative;overflow:hidden;
+      background:
+        radial-gradient(1200px 420px at 60% 0%, rgba(15,95,176,.16), transparent 60%),
+        radial-gradient(800px 300px at 30% 20%, rgba(10,58,122,.22), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg-2) 60%, #060a10);
+      border-bottom:1px solid rgba(212,175,55,.06);
+      color:var(--ink)
+    }
+    .hero-inner{max-width:1200px;margin:0 auto;padding:84px 20px 72px;display:grid;gap:20px}
+    .kicker{color:var(--gold-2);font-weight:700;letter-spacing:.24em;font-size:.78rem;text-transform:uppercase}
+    h1{margin:0;font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,56px);line-height:1.05;color:#f7f3e6}
+    .sub{color:var(--muted);max-width:820px;font-size:1.05rem}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+    .cta-primary{background:linear-gradient(180deg, rgba(212,175,55,.18), rgba(212,175,55,.04));}
+    .hero-tag{margin-top:18px;color:#a9c3ff;font-size:.95rem;border-left:3px solid rgba(212,175,55,.28);padding-left:12px}
+
+    /* center logo in hero */
+    .hero-logo {
+      display:flex;align-items:center;gap:16px;margin-top:18px;
+    }
+    .hero-logo img{width:108px;height:108px;border-radius:50%;border:3px solid rgba(212,175,55,.24);object-fit:cover;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+    .hero-logo .byline{color:var(--muted);font-size:.95rem}
+
+    section{max-width:1100px;margin:0 auto;padding:64px 20px;border-bottom:1px solid rgba(212,175,55,.06)}
+    h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 16px 0;font-family:'Playfair Display',serif;color:var(--gold-2)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{padding:18px;border:1px solid rgba(212,175,55,.12);border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,.01), rgba(255,255,255,0))}
+    .card h3{margin:4px 0 6px 0;font-family:'Playfair Display',serif;color:#fff}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;border:1px solid rgba(212,175,55,.22);border-radius:20px;padding:4px 10px;margin:6px 6px 0 0;font-size:.85rem;color:var(--gold-2)}
+    .two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+    @media (max-width:900px){.two-col{grid-template-columns:1fr}}
+    footer{max-width:1100px;margin:0 auto;padding:42px 20px;color:#98a7c7;font-size:.95rem}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(10,58,122,.18);border:1px solid rgba(10,58,122,.32);font-size:.82rem;color:#cfe2ff}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <!-- Put the real logo file in the same folder and name it meduza-logo.jpg (or change src) -->
+        <a href="#top" aria-label="Meduza home">
+          <img class="logo-img" src="meduza-logo.jpg" alt="Meduza logo">
+        </a>
+        <div class="text">MEDUZA</div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#research">Research</a>
+        <a href="#investors">Investors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn" href="#contact">Request Access</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero" id="top">
+      <div class="hero-inner">
+        <div class="kicker">BIOTECH • LONGEVITY • TRANSFORMATION</div>
+        <h1>The Future of 500 Years — Today.</h1>
+        <p class="sub">Meduza merges cutting-edge biotechnology, advanced gene therapy, and longevity research with a luxury lifestyle vision. We create discreet access to world-class medical innovation and elite wellness ecosystems in Dubai and beyond.</p>
+
+        <div class="cta-row">
+          <a class="btn cta-primary" href="#investors">Request Investor Pitch</a>
+          <a class="btn" href="#services">Explore Services</a>
+        </div>
+
+        <div class="hero-tag">Stealth-mode innovation • Private membership • UAE tax advantage</div>
+
+        <div class="hero-logo" aria-hidden="true">
+          <!-- optional larger hero logo -->
+          <img src="meduza-logo.jpg" alt="">
+          <div class="byline">Luxury biotech, invitation-only access</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Meduza</h2>
+      <div class="two-col">
+        <div>
+          <p>We operate at the intersection of science and luxury. Our network spans elite research labs, VIP clinics, and sovereign-friendly jurisdictions. Meduza curates safe, legal, and strategic access to frontier longevity solutions while maintaining strict privacy and medical governance.</p>
+          <div class="muted">From research → to innovation → to a 500-year vision.</div>
+        </div>
+        <div class="card">
+          <div class="pill">Dubai, UAE</div>
+          <div class="pill">Private by invitation</div>
+          <div class="pill">Encrypted contact</div>
+          <p class="muted" style="margin-top:8px">Discretion, compliance, and excellence are foundational to our work with clients and partners.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Gene Therapy & Longevity</h3>
+          <p class="muted">Klotho activation, telomerase extension, myostatin modulation, OSK rejuvenation, Epitalon protocols. Tiered programs (Tier 1-4) with robust screening and follow-up.</p>
+          <span class="tag">Screened</span><span class="tag">Tiered Access</span><span class="tag">Medical Governance</span>
+        </div>
+        <div class="card">
+          <h3>Biotech & Research</h3>
+          <p class="muted">Collaborations with leading labs, access to early innovation pipelines, and AI-assisted evidence synthesis. Selective disclosure while in stealth.</p>
+          <span class="tag">Global Labs</span><span class="tag">Stealth</span><span class="tag">AI-assisted</span>
+        </div>
+        <div class="card">
+          <h3>VIP Medical Concierge</h3>
+          <p class="muted">Entry into top clinics in Dubai, Switzerland, Japan, Panama. Personalized rejuvenation, preventative programs, and white-glove logistics.</p>
+          <span class="tag">Dubai</span><span class="tag">Switzerland</span><span class="tag">Japan</span>
+        </div>
+        <div class="card">
+          <h3>Private Membership & Investment</h3>
+          <p class="muted">Meduza Circle for qualified investors and HNWIs: access to tokenized biotech assets, luxury health resorts, and strategic co-investments.</p>
+          <span class="tag">Meduza Circle</span><span class="tag">Tokenized</span><span class="tag">UAE Advantage</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research & Innovation</h2>
+      <div class="two-col">
+        <div>
+          <p>Science without borders; innovation without compromise. We operate with rigorous due diligence, staged evidence thresholds, and long-term follow-up protocols. Client safety, data security, and regulatory alignment are non-negotiable.</p>
+          <ul class="muted">
+            <li>Selective publication and partner-led studies</li>
+            <li>AI-augmented risk/benefit modeling</li>
+            <li>Privacy-first data stewardship</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stealth-Mode Pipelines</h3>
+          <p class="muted">We maintain a curated roadmap of longevity candidates across modalities (genetic, peptide, cellular). Invitation-only briefings available to qualified partners.</p>
+          <a class="btn" href="#investors" style="margin-top:8px">Request Briefing</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="investors">
+      <h2>Investors & Partnerships</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Why Meduza</h3>
+          <p class="muted">Rapidly expanding longevity market, sovereign-friendly UAE base, and scalable models across luxury health ecosystems.</p>
+        </div>
+        <div class="card">
+          <h3>Opportunities</h3>
+          <p class="muted">Equity, tokenized biotech assets, and co-development of premium wellness destinations.</p>
+        </div>
+        <div class="card">
+          <h3>Governance</h3>
+          <p class="muted">Compliance frameworks, independent medical oversight, and tiered risk controls.</p>
+        </div>
+      </div>
+      <div style="margin-top:16px">
+        <a class="btn cta-primary" href="#contact">Request Investor Pitch</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="two-col">
+        <div>
+          <p class="muted">Private access only. Introductions via referral are prioritized. All communications are encrypted.</p>
+          <p>Email: <a href="mailto:access@meduza.life">access@meduza.life</a> (sample)</p>
+          <p>Location: Dubai, United Arab Emirates</p>
+        </div>
+        <form class="card" onsubmit="event.preventDefault(); alert('Thank you — we will be in touch.');">
+          <label>Name<br><input type="text" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(212,175,55,.18);background:#0a0f16;color:#e9f1ff"></label><br><br>
+          <label>Email<br><input type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(212,175,55,.18);background:#0a0f16;color:#e9f1ff"></label><br><br>
+          <label>Message<br><textarea required rows="4" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(212,175,55,.18);background:#0a0f16;color:#e9f1ff"></textarea></label><br><br>
+          <button class="btn cta-primary" type="submit">Send Securely</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="max-width:1100px;margin:0 auto;padding:22px 20px;color:#98a7c7">© Meduza. All rights reserved. Not medical advice. For informational & investment purposes only.</div>
+  </footer>
+</body>
+</html>
